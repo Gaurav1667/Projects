@@ -6,7 +6,28 @@
 </head>
 <body>
         <section>
-         <h1>This is Test of User Dashboard..!!!</h1>
+         <div class = "container">
+           
+           <div class = "card">
+           
+              <div class = "card-body my-5">
+          
+         
+          <div class = "container text-center">
+            <img class="my_profile_picture" style="height:200px; width:200px" src = "" th:src="@{'/img/contact.png'}" alt="profile photo"></img>
+           </div>
+           
+          
+          
+          <h1 class = "text-center mt-3 text-secondary font-italic">
+             Start Adding  your Contact on cloud...
+          </h1>
+          
+          <a th:href = "@{/user/add-contact}" class ='btn btn-primary mt-4 btn-block text-uppercase'>Add New Contact</a>
+          </div>
+          </div>
+          </div>
         </section>
+       
 </body>
 </html>

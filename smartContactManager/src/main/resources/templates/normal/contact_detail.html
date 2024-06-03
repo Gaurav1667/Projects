@@ -11,10 +11,11 @@
            
               <div class = "card-body" >
                     
-                    <div class = "container text-center"> 
+                 <div class = "container text-center"> 
          
-         	      <img class="my_profile_picture" style="height:200px;width:200px" src = "" th:src="@{'/img/'+${contact.image}}" alt="profile photo"></img>
+         	        <img class="my_profile_picture" style="height:200px;width:200px" src = "" th:src="@{'/img/'+${contact.image}}" alt="profile photo"></img>
          	      
+         	      </div>
          	      <h3 class = "mt-3"> <span th:text="${contact.name}"></span> (<span th:text="${contact.nickName}"></span> ) </h3> 
          	      
                                         
@@ -57,6 +58,7 @@
 						      <th:block th:text = "${contact.description}"></th:block>
 						  
 						  </div>
+						
 						  
 						</table>
 						
@@ -68,7 +70,7 @@
 						</div>
 					</div>
 					
-               </div>
+               
                
          </div>
          
