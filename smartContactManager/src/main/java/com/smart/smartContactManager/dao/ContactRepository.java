@@ -9,11 +9,15 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import com.smart.smartContactManager.entities.Contact;
+import com.smart.smartContactManager.entities.User;
 
 public interface ContactRepository extends JpaRepository<Contact, Integer>  {
 	//A Page is a sublist of a list of objects. 
 	//It allows gain information about the position of it in the containing entire list.
 	@Query(value = "from Contact as c where c.user.id = :userId")
 	public Page<Contact> findContactByUser (@Param("userId") int userId ,Pageable pepageable);
+	
+	public List<Contact> findByNameContainingAndUser(String name,User user);
+	
 	
 }
