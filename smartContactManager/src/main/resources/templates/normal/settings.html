@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})" >
+<head>
+<meta charset="UTF-8">
+<title>Settings Dashboard</title>
+</head>
+<body>
+        <section>
+           
+           <h1> This is Settings Page</h1>
+          
+          <!-- This script is used to displau active link on home page  -->
+          <script>
+             $(document).ready(()=>{
+            	 $(".item").removeClass("active");
+            	 $("#Settings").addClass("active");
+             });
+          </script>
+        </section>
+       
+</body>
+</html>
